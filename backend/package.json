@@ -1,0 +1,30 @@
+{
+  "name": "hostinger-interview-backend",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "start": "npm run watch",
+    "watch": "nodemon -e ts  --exec \"npm run compile-ts-run-server\"",
+    "compile-ts-run-server": "tsc && env NODE_ENV=development node ./dist/server.js",
+    "compile-ts-run-prod-server": "tsc && env NODE_ENV=production node ./dist/server.js"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/body-parser": "^1.17.0",
+    "@types/cors": "^2.8.5",
+    "@types/express": "^4.17.0",
+    "@types/faker": "^4.1.5",
+    "@types/node": "^12.6.8",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dayjs": "^1.8.15",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "typescript": "^3.5.3"
+  }
+}

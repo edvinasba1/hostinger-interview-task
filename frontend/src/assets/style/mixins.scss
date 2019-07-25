@@ -1,0 +1,26 @@
+// Mixins for different screen sizes.
+// For the sake of simplicity I have used only these two breakpoints.
+@mixin for-bigger-screens {
+    @media (min-width: $bigger-screens-min-width) {
+      @content;
+    }
+  }
+  
+@mixin for-smaller-screens {
+    @media (max-width: $smaller-screens-max-width) {
+        @content;
+    }
+}
+
+// Has hover
+@mixin hover {
+    &:not([disabled]):hover {
+      @content;
+    }
+  }
+
+@mixin not-last-child {
+    &:not(:nth-last-child(0)) {
+        @content;
+    }
+}

@@ -1,0 +1,23 @@
+:root {
+    --vh: 1vh;
+    --appbar-height: $appbar-height;
+    --table-header-height: $table-header-height;
+    --table-footer-height: $table-footer-height;
+    --rem: $rem;
+}
+
+html {
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    position: absolute;
+    top: $zero-rem;
+    right: $zero-rem;
+    bottom: $zero-rem;
+    left: $zero-rem;
+    margin: $zero-rem;
+    background-color: $white;
+    font-family: 'H','Trebuchet MS',Helvetica;
+    overflow: hidden;
+}
